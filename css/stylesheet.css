@@ -298,3 +298,29 @@ em{
 #réseaux p>a{
     color: blue;
 }
+
+#Presentation h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 15px;
+}
+
+#Presentation p{
+    text-align: center;
+}
+#Presentation p>a{
+    color: blue;
+}
+
+#Pp h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 15px;
+}
+
+#Pp p{
+    text-align: center;
+}
+#Pp p>a{
+    color: blue;
+}

@@ -207,7 +207,7 @@ em{
     margin: 15px;
 }
 #Compétences li{
-    max-height: 15px;
+    max-height: fit-content;
     margin: 50px;
     padding: 15px;
     background-color: white;

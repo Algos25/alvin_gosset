@@ -53,17 +53,60 @@
         </script>
     </head>
     <body>
-        <section>
-            <header>
-                <h1 class = "text-2xl font-bold">Mon premier projet</h1>
-                <p>Je vous présente mon premier projet</p>
-            </header>
-            <nav>
-                <a href="index.html"><img src="img/Logo.png" width="25" height="25"></a>
-            </nav>
-        </section>
+        <!-- Navigation -->
+        <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300" id="navbar">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <a href="#accueil" class="flex items-center space-x-2 group">
+                            <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 border border-gray-200">
+                            <img src = "./img/Logo.png" class="w-8 h-8 object-contain"/>
+                            </div>
+                            <span class="font-display font-semibold text-gray-900 hidden sm:block">Alvin GOSSET</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Desktop Navigation -->
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-8">
+                            <a href="#accueil" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Accueil</a>
+                            <a href="#competences" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Compétences</a>
+                            <a href="#projets" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Projets</a>
+                            <a href="#apropos" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">À propos</a>
+                            <a href="#contact" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Contact</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden">
+                        <button type="button" class="mobile-menu-btn text-gray-700 hover:text-primary-600 focus:outline-none focus:text-primary-600 transition-colors duration-200" aria-label="Menu">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="mobile-menu md:hidden fixed top-16 right-0 w-64 h-screen bg-white shadow-xl border-l border-gray-200">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#accueil" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Accueil</a>
+                    <a href="#competences" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Compétences</a>
+                    <a href="#projets" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Projets</a>
+                    <a href="#apropos" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">À propos</a>
+                    <a href="#contact" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Contact</a>
+                </div>
+            </div>
+        </nav>  
+        <header>
+            <h1 class = "text-2xl font-bold">Mon premier projet</h1>
+            <p>Je vous présente mon premier projet</p>
+        </header>
     </body>
 </html>
+
 
 
 

@@ -2,7 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Mon premier projet</title>
+        <title>Site Web Evenementiel</title>
+        <!-- Icon -->
+        <link rel="icon" style="image/png" href="img/Logo.png">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,10 +13,9 @@
         <!-- Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         
-        <!-- Tailwind CSS & CSS Stylesheet file -->
+        <!-- Tailwind CSS & CSS Stylesheet file-->
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel = "stylesheet" href = "css/stylesheet.css">
-        
+        <link rel="stylesheet" href="css/stylesheet.css">
         <script>
             tailwind.config = {
                 theme: {
@@ -58,7 +59,7 @@
                 <div class="flex justify-between items-center h-16">
                     <!-- Logo -->
                     <div class="flex-shrink-0">
-                        <a href="#accueil" class="flex items-center space-x-2 group">
+                        <a href="index.html#accueil" class="flex items-center space-x-2 group">
                             <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 border border-gray-200">
                             <img src = "./img/Logo.png" class="w-8 h-8 object-contain"/>
                             </div>
@@ -69,11 +70,11 @@
                     <!-- Desktop Navigation -->
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-8">
-                            <a href="#accueil" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Accueil</a>
-                            <a href="#competences" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Compétences</a>
-                            <a href="#projets" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Projets</a>
-                            <a href="#apropos" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">À propos</a>
-                            <a href="#contact" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Contact</a>
+                            <a href="index.html#accueil" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Accueil</a>
+                            <a href="index.html#competences" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Compétences</a>
+                            <a href="index.html#projets" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Projets</a>
+                            <a href="index.html#apropos" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">À propos</a>
+                            <a href="index.html#contact" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Contact</a>
                         </div>
                     </div>
                     
@@ -91,25 +92,51 @@
             <!-- Mobile Navigation -->
             <div class="mobile-menu md:hidden fixed top-16 right-0 w-64 h-screen bg-white shadow-xl border-l border-gray-200">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="#accueil" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Accueil</a>
-                    <a href="#competences" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Compétences</a>
-                    <a href="#projets" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Projets</a>
-                    <a href="#apropos" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">À propos</a>
-                    <a href="#contact" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Contact</a>
+                    <a href="index.html#accueil" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Accueil</a>
+                    <a href="index.html#competences" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Compétences</a>
+                    <a href="index.html#projets" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Projets</a>
+                    <a href="index.html#apropos" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">À propos</a>
+                    <a href="index.html#contact" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Contact</a>
                 </div>
             </div>
-        </nav>
-        <header>
-            <h1 class = "text-2xl font-bold">Mon deuxième projet</h1>
-            <p>Je vous présente mon second projet</p>
-        </header>
-            
-            
+        </nav>  
+        <section class="relative bg-[url('img/2026_final.jpg')] bg-fixed bg-cover bg-center min-h-screen flex items-center justify-center">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 text-center px-4">
+                <h1 class="text-4xl text-white font-bold">
+                    Trésors de Banlieues
+                </h1>
+                <p class="text-3xl text-white mt-4">
+                    Développé avec mon groupe de projet, observez le résultat final !
+                </p>
+            </div>
+
         </section>
+        </section>
+                <h1 class="text-center text-4xl font-bold my-16">Le site web</h1>
+                <div class="section-paddin flex justify-center items-center mt-8 mb-8">
+                    <p class="text-left leading-tight mr-8" >
+                        Un projet universitaire réalisé en groupe avec mes amis !<br> Le site permet vous fais découvrir l'exposition culturelle <br>Trésors de banlieues, une expo mettant en avant des <br>oeuvres venues des banlieues. Il a été développé en utilisant <br>HTML, CSS et JavaScript pour une expérience utilisateur fluide <br>et interactive.
+                    </p>
+                    <img class="w-80 ml-8 p-4 border-black rounded-md border-2" src="img/Programme.png" alt="Chess game">
+                </div>
+                <div class="section-paddin flex justify-center items-center mt-8 mb-8">
+                    <img src="img/pexels-rgsk97-814133.jpg" class="h-64 mr-8">
+                    <p class="ml-8 text-left" >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Sed euismod, nunc vel tincidunt pretium, nisi urna facilisis risus, <br>sit amet viverra elit odio id sapien.
+                    </p>
+                </div>
+
+        <footer class="bg-gray-900 text-white py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <p class="text-gray-400">
+                        © 2024 Alvin GOSSET. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    
+        <script src='js/main.js'></script>
     </body>
 </html>
-
-
-
-
-
